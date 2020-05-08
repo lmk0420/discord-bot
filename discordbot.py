@@ -28,9 +28,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    split_message = message.content.split(' ')
-    channel_map = {channel.name: channel for channel in client.get_all_channels()}
-
     if message.content.startswith('/katoru'):
         await client.send_message(message.channel, random_katoru())
 
