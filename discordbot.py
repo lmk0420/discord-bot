@@ -35,7 +35,7 @@ async def on_message(message):
         await client.send_message(message.channel, random_katoru())
 
     elif message.content.startswith('/help'):
-        m = '\t\t/katoru\n' \
+        m = '\t\t・/katoru\n' \
             '\t\t\t 最終カトルの４アビが発動します。\n' \
             '\n・ユーザのボイスチャンネルへの入室・退室・移動を通知します。\n' \
             '\n※ご要望, 追加して欲しい機能などあれば マコト#7215 までお気軽にどうぞ。\n'
