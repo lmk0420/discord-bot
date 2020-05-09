@@ -1,6 +1,8 @@
-import sys
-import discord
+import os
 import random
+import sys
+
+import discord
 
 
 def random_katoru():
@@ -61,7 +63,4 @@ async def on_voice_state_update(member, before, after):
                 err.write(sys.exc_info() + '\n')
 
 
-with open('token.txt', mode='r', encoding='utf-8') as f:
-    token = f.readline()
-
-client.run(token)
+client.run(os.environ.get('TOKEN'))
